@@ -29,7 +29,7 @@ class DefaultTheme extends Theme
     public function __construct($themePath = null)
     {
         $this->themePath = $themePath ?: __DIR__ . '/../../templates/default';
-        parent::__construct($themePath . '/doc.php');
+        parent::__construct($this->themePath . '/doc.php');
     }
 
     /**
