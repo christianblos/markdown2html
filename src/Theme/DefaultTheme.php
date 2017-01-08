@@ -24,11 +24,11 @@ class DefaultTheme extends Theme
     private $themePath;
 
     /**
-     * @param string $themePath
+     * @param string|null $themePath
      */
-    public function __construct($themePath)
+    public function __construct($themePath = null)
     {
-        $this->themePath = $themePath;
+        $this->themePath = $themePath ?: __DIR__ . '/../../templates/default';
         parent::__construct($themePath . '/doc.php');
     }
 
