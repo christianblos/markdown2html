@@ -66,6 +66,12 @@ if (!function_exists('buildNavItem')) {
         foreach ($theme->getNavItems() as $navItem) {
             buildNavItem($navItem, $baseUrl, $theme->getCurrentItemId());
         }
+        if ($theme->naviLinks) {
+            echo '<li class="spacer"></li>';
+        }
+        foreach ($theme->naviLinks as $label => $url) {
+            echo sprintf('<li><a href="%s">%s</a></li>', $url, $label);
+        }
         ?>
     </ul>
 </nav>

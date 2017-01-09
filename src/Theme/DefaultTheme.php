@@ -19,6 +19,11 @@ class DefaultTheme extends Theme
     public $additionalCss;
 
     /**
+     * @var string[]
+     */
+    public $naviLinks = [];
+
+    /**
      * @var string
      */
     private $themePath;
