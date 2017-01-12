@@ -1,6 +1,7 @@
 # markdown2html
 
 Converts markdown files to static html pages.
+[See demo](http://christianblos.github.io/codedocs) (I used it to document another project of mine).
 
 
 ## Installation
@@ -70,7 +71,7 @@ markdown
 
 The **number prefix** (like "01.") indicates the order of navigation items. You can omit it if the order doesn't matter.
 
-All dashes are replaced with spaces ("Via-PHP" -> "Via PHP").
+All dashes are replaced with spaces ("Via-PHP" → "Via PHP").
 If you want to have dashes in the navigation, use 2 or 3 dashes:
 
 - "00.Via-command--line.md" → "Via command-line" 
